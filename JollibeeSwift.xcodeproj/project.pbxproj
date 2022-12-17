@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12AAF167294E83AE002493FC /* JollibeeSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAF166294E83AE002493FC /* JollibeeSwiftApp.swift */; };
+		12AAF169294E83AE002493FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAF168294E83AE002493FC /* ContentView.swift */; };
+		12AAF16B294E83AE002493FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12AAF16A294E83AE002493FC /* Assets.xcassets */; };
+		12AAF16E294E83AE002493FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12AAF16D294E83AE002493FC /* Preview Assets.xcassets */; };
+		12AAF170294E83AE002493FC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAF16F294E83AE002493FC /* Persistence.swift */; };
+		12AAF173294E83AE002493FC /* JollibeeSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 12AAF171294E83AE002493FC /* JollibeeSwift.xcdatamodeld */; };
+		12AAF17D294E83AF002493FC /* JollibeeSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAF17C294E83AF002493FC /* JollibeeSwiftTests.swift */; };
+		12AAF187294E83AF002493FC /* JollibeeSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAF186294E83AF002493FC /* JollibeeSwiftUITests.swift */; };
+		12AAF189294E83AF002493FC /* JollibeeSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAF188294E83AF002493FC /* JollibeeSwiftUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12AAF179294E83AF002493FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12AAF15B294E83AD002493FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12AAF162294E83AD002493FC;
+			remoteInfo = JollibeeSwift;
+		};
+		12AAF183294E83AF002493FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12AAF15B294E83AD002493FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12AAF162294E83AD002493FC;
+			remoteInfo = JollibeeSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12AAF163294E83AE002493FC /* JollibeeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JollibeeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12AAF166294E83AE002493FC /* JollibeeSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JollibeeSwiftApp.swift; sourceTree = "<group>"; };
+		12AAF168294E83AE002493FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		12AAF16A294E83AE002493FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12AAF16D294E83AE002493FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		12AAF16F294E83AE002493FC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		12AAF172294E83AE002493FC /* JollibeeSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JollibeeSwift.xcdatamodel; sourceTree = "<group>"; };
+		12AAF178294E83AF002493FC /* JollibeeSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JollibeeSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12AAF17C294E83AF002493FC /* JollibeeSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JollibeeSwiftTests.swift; sourceTree = "<group>"; };
+		12AAF182294E83AF002493FC /* JollibeeSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JollibeeSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12AAF186294E83AF002493FC /* JollibeeSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JollibeeSwiftUITests.swift; sourceTree = "<group>"; };
+		12AAF188294E83AF002493FC /* JollibeeSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JollibeeSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12AAF160294E83AD002493FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12AAF175294E83AF002493FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12AAF17F294E83AF002493FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12AAF15A294E83AD002493FC = {
+			isa = PBXGroup;
+			children = (
+				12AAF165294E83AE002493FC /* JollibeeSwift */,
+				12AAF17B294E83AF002493FC /* JollibeeSwiftTests */,
+				12AAF185294E83AF002493FC /* JollibeeSwiftUITests */,
+				12AAF164294E83AE002493FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12AAF164294E83AE002493FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12AAF163294E83AE002493FC /* JollibeeSwift.app */,
+				12AAF178294E83AF002493FC /* JollibeeSwiftTests.xctest */,
+				12AAF182294E83AF002493FC /* JollibeeSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12AAF165294E83AE002493FC /* JollibeeSwift */ = {
+			isa = PBXGroup;
+			children = (
+				12AAF166294E83AE002493FC /* JollibeeSwiftApp.swift */,
+				12AAF168294E83AE002493FC /* ContentView.swift */,
+				12AAF16A294E83AE002493FC /* Assets.xcassets */,
+				12AAF16F294E83AE002493FC /* Persistence.swift */,
+				12AAF171294E83AE002493FC /* JollibeeSwift.xcdatamodeld */,
+				12AAF16C294E83AE002493FC /* Preview Content */,
+			);
+			path = JollibeeSwift;
+			sourceTree = "<group>";
+		};
+		12AAF16C294E83AE002493FC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				12AAF16D294E83AE002493FC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		12AAF17B294E83AF002493FC /* JollibeeSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				12AAF17C294E83AF002493FC /* JollibeeSwiftTests.swift */,
+			);
+			path = JollibeeSwiftTests;
+			sourceTree = "<group>";
+		};
+		12AAF185294E83AF002493FC /* JollibeeSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				12AAF186294E83AF002493FC /* JollibeeSwiftUITests.swift */,
+				12AAF188294E83AF002493FC /* JollibeeSwiftUITestsLaunchTests.swift */,
+			);
+			path = JollibeeSwiftUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12AAF162294E83AD002493FC /* JollibeeSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12AAF18C294E83AF002493FC /* Build configuration list for PBXNativeTarget "JollibeeSwift" */;
+			buildPhases = (
+				12AAF15F294E83AD002493FC /* Sources */,
+				12AAF160294E83AD002493FC /* Frameworks */,
+				12AAF161294E83AD002493FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JollibeeSwift;
+			productName = JollibeeSwift;
+			productReference = 12AAF163294E83AE002493FC /* JollibeeSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12AAF177294E83AF002493FC /* JollibeeSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12AAF18F294E83AF002493FC /* Build configuration list for PBXNativeTarget "JollibeeSwiftTests" */;
+			buildPhases = (
+				12AAF174294E83AF002493FC /* Sources */,
+				12AAF175294E83AF002493FC /* Frameworks */,
+				12AAF176294E83AF002493FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12AAF17A294E83AF002493FC /* PBXTargetDependency */,
+			);
+			name = JollibeeSwiftTests;
+			productName = JollibeeSwiftTests;
+			productReference = 12AAF178294E83AF002493FC /* JollibeeSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		12AAF181294E83AF002493FC /* JollibeeSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12AAF192294E83AF002493FC /* Build configuration list for PBXNativeTarget "JollibeeSwiftUITests" */;
+			buildPhases = (
+				12AAF17E294E83AF002493FC /* Sources */,
+				12AAF17F294E83AF002493FC /* Frameworks */,
+				12AAF180294E83AF002493FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12AAF184294E83AF002493FC /* PBXTargetDependency */,
+			);
+			name = JollibeeSwiftUITests;
+			productName = JollibeeSwiftUITests;
+			productReference = 12AAF182294E83AF002493FC /* JollibeeSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12AAF15B294E83AD002493FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					12AAF162294E83AD002493FC = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					12AAF177294E83AF002493FC = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 12AAF162294E83AD002493FC;
+					};
+					12AAF181294E83AF002493FC = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 12AAF162294E83AD002493FC;
+					};
+				};
+			};
+			buildConfigurationList = 12AAF15E294E83AD002493FC /* Build configuration list for PBXProject "JollibeeSwift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12AAF15A294E83AD002493FC;
+			productRefGroup = 12AAF164294E83AE002493FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12AAF162294E83AD002493FC /* JollibeeSwift */,
+				12AAF177294E83AF002493FC /* JollibeeSwiftTests */,
+				12AAF181294E83AF002493FC /* JollibeeSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12AAF161294E83AD002493FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12AAF16E294E83AE002493FC /* Preview Assets.xcassets in Resources */,
+				12AAF16B294E83AE002493FC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12AAF176294E83AF002493FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12AAF180294E83AF002493FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12AAF15F294E83AD002493FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12AAF170294E83AE002493FC /* Persistence.swift in Sources */,
+				12AAF173294E83AE002493FC /* JollibeeSwift.xcdatamodeld in Sources */,
+				12AAF169294E83AE002493FC /* ContentView.swift in Sources */,
+				12AAF167294E83AE002493FC /* JollibeeSwiftApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12AAF174294E83AF002493FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12AAF17D294E83AF002493FC /* JollibeeSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12AAF17E294E83AF002493FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12AAF189294E83AF002493FC /* JollibeeSwiftUITestsLaunchTests.swift in Sources */,
+				12AAF187294E83AF002493FC /* JollibeeSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12AAF17A294E83AF002493FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12AAF162294E83AD002493FC /* JollibeeSwift */;
+			targetProxy = 12AAF179294E83AF002493FC /* PBXContainerItemProxy */;
+		};
+		12AAF184294E83AF002493FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12AAF162294E83AD002493FC /* JollibeeSwift */;
+			targetProxy = 12AAF183294E83AF002493FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12AAF18A294E83AF002493FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		12AAF18B294E83AF002493FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12AAF18D294E83AF002493FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JollibeeSwift/Preview Content\"";
+				DEVELOPMENT_TEAM = SS3KAQVX44;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = levinci.JollibeeSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12AAF18E294E83AF002493FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JollibeeSwift/Preview Content\"";
+				DEVELOPMENT_TEAM = SS3KAQVX44;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = levinci.JollibeeSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		12AAF190294E83AF002493FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SS3KAQVX44;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = levinci.JollibeeSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JollibeeSwift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JollibeeSwift";
+			};
+			name = Debug;
+		};
+		12AAF191294E83AF002493FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SS3KAQVX44;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = levinci.JollibeeSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JollibeeSwift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JollibeeSwift";
+			};
+			name = Release;
+		};
+		12AAF193294E83AF002493FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SS3KAQVX44;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = levinci.JollibeeSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JollibeeSwift;
+			};
+			name = Debug;
+		};
+		12AAF194294E83AF002493FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SS3KAQVX44;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = levinci.JollibeeSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JollibeeSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12AAF15E294E83AD002493FC /* Build configuration list for PBXProject "JollibeeSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12AAF18A294E83AF002493FC /* Debug */,
+				12AAF18B294E83AF002493FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12AAF18C294E83AF002493FC /* Build configuration list for PBXNativeTarget "JollibeeSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12AAF18D294E83AF002493FC /* Debug */,
+				12AAF18E294E83AF002493FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12AAF18F294E83AF002493FC /* Build configuration list for PBXNativeTarget "JollibeeSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12AAF190294E83AF002493FC /* Debug */,
+				12AAF191294E83AF002493FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12AAF192294E83AF002493FC /* Build configuration list for PBXNativeTarget "JollibeeSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12AAF193294E83AF002493FC /* Debug */,
+				12AAF194294E83AF002493FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		12AAF171294E83AE002493FC /* JollibeeSwift.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				12AAF172294E83AE002493FC /* JollibeeSwift.xcdatamodel */,
+			);
+			currentVersion = 12AAF172294E83AE002493FC /* JollibeeSwift.xcdatamodel */;
+			path = JollibeeSwift.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 12AAF15B294E83AD002493FC /* Project object */;
+}
