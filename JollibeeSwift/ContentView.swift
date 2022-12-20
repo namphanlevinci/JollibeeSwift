@@ -16,10 +16,14 @@ struct ContentView: View {
     private static let screenHeight = UIScreen.main.bounds.height
     private static let screenWidth = UIScreen.main.bounds.width
     
+    @State var isSheet:Bool = false
+    
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
+    
+    private let url:String = "https://demo.sirv.com/nuphar.jpg?w=5000"
     
     init(){
         for familyName in UIFont.familyNames{
@@ -35,9 +39,19 @@ struct ContentView: View {
                     .scaledToFit()
                 
                 VStack(alignment: .leading){
-                    HeaderVIew()
+                    HeaderVIew(isSheet: $isSheet)
                     VStack{
-                        CarouselView()
+//                        CarouselView()
+                        AsyncImage(url: URL(string: url)) { image in
+                                    image
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .scaledToFit()
+                                        
+                                } placeholder: {
+                                    Color.gray
+                                }
+                                .frame(width: 350, height: 350)
                     }
                     .frame(width: ContentView.screenWidth, height: ContentView.screenHeight / 2 - 80)
                     VStack{
@@ -99,6 +113,7 @@ struct MenuItemView: View{
 
 
 struct HeaderVIew: View{
+    @Binding var isSheet:Bool;
     var body: some View{
         HStack(alignment: .center){
             HStack(spacing: 8){
@@ -125,9 +140,12 @@ struct HeaderVIew: View{
             Spacer()
             HStack(spacing: 14){
                 Button(action: {
+                    isSheet.toggle()
                 }){
                     Image("ic_location")
                     .frame(width: 30,height: 30)
+                }.sheet(isPresented: $isSheet) {
+                    SheetLocation(isSheet: $isSheet)
                 }
                 Button(action: {
                 }){
@@ -151,6 +169,7 @@ struct ItemCarousel: Identifiable {
 }
 
 let roles = ["jollibee-shop","jollibee-shop","jollibee-shop","jollibee-shop","jollibee-shop","jollibee-shop"]
+
 struct CarouselView: View {
 
     let items: [ItemCarousel] = roles.map { ItemCarousel(image: Image($0)) }
@@ -162,5 +181,17 @@ struct CarouselView: View {
                 .scaledToFill()
         }
         .frame(height: 350)
+    }
+}
+
+
+struct SheetLocation: View{
+    @Binding var isSheet:Bool
+    var body: some View{
+        Button(action: {
+            isSheet.toggle()
+        }){
+            Text("DissMiss")
+        }
     }
 }

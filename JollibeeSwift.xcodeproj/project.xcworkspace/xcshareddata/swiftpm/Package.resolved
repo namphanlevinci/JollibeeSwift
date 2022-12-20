@@ -1,14 +1,16 @@
 {
-  "pins" : [
-    {
-      "identity" : "acarousel",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/JWAutumn/ACarousel",
-      "state" : {
-        "revision" : "8a322513580f21288fd87eb3a1341c247b3e2a76",
-        "version" : "0.2.0"
+  "object": {
+    "pins": [
+      {
+        "package": "ACarousel",
+        "repositoryURL": "https://github.com/JWAutumn/ACarousel",
+        "state": {
+          "branch": "main",
+          "revision": "807d859fb39ccaae2caf8ff60fb2ee1a5048f4ca",
+          "version": null
+        }
       }
-    }
-  ],
-  "version" : 2
+    ]
+  },
+  "version": 1
 }

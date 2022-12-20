@@ -21,7 +21,6 @@
 		1264B854294F59D800B59601 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1264B847294F59D800B59601 /* Roboto-Black.ttf */; };
 		1264B855294F59D800B59601 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1264B848294F59D800B59601 /* Roboto-ThinItalic.ttf */; };
 		1264B856294F59D800B59601 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1264B849294F59D800B59601 /* Roboto-LightItalic.ttf */; };
-		1274B5712951624600B50C45 /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 1274B5702951624600B50C45 /* ACarousel */; };
 		127D001A294FCC61002D4888 /* SVN-Merge Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 127D0019294FCC61002D4888 /* SVN-Merge Bold.otf */; };
 		12AAF167294E83AE002493FC /* JollibeeSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAF166294E83AE002493FC /* JollibeeSwiftApp.swift */; };
 		12AAF169294E83AE002493FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAF168294E83AE002493FC /* ContentView.swift */; };
@@ -33,6 +32,7 @@
 		12AAF187294E83AF002493FC /* JollibeeSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAF186294E83AF002493FC /* JollibeeSwiftUITests.swift */; };
 		12AAF189294E83AF002493FC /* JollibeeSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAF188294E83AF002493FC /* JollibeeSwiftUITestsLaunchTests.swift */; };
 		12AAF196294E8D0B002493FC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAF195294E8D0B002493FC /* DetailView.swift */; };
+		3D5595CF29517CDA005CECAC /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 3D5595CE29517CDA005CECAC /* ACarousel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1274B5712951624600B50C45 /* ACarousel in Frameworks */,
+				3D5595CF29517CDA005CECAC /* ACarousel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +210,7 @@
 			);
 			name = JollibeeSwift;
 			packageProductDependencies = (
-				1274B5702951624600B50C45 /* ACarousel */,
+				3D5595CE29517CDA005CECAC /* ACarousel */,
 			);
 			productName = JollibeeSwift;
 			productReference = 12AAF163294E83AE002493FC /* JollibeeSwift.app */;
@@ -285,7 +285,7 @@
 			);
 			mainGroup = 12AAF15A294E83AD002493FC;
 			packageReferences = (
-				1274B56F2951624600B50C45 /* XCRemoteSwiftPackageReference "ACarousel" */,
+				3D5595CD29517CDA005CECAC /* XCRemoteSwiftPackageReference "ACarousel" */,
 			);
 			productRefGroup = 12AAF164294E83AE002493FC /* Products */;
 			projectDirPath = "";
@@ -516,6 +516,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -546,6 +547,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -677,20 +679,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1274B56F2951624600B50C45 /* XCRemoteSwiftPackageReference "ACarousel" */ = {
+		3D5595CD29517CDA005CECAC /* XCRemoteSwiftPackageReference "ACarousel" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/JWAutumn/ACarousel";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1274B5702951624600B50C45 /* ACarousel */ = {
+		3D5595CE29517CDA005CECAC /* ACarousel */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1274B56F2951624600B50C45 /* XCRemoteSwiftPackageReference "ACarousel" */;
+			package = 3D5595CD29517CDA005CECAC /* XCRemoteSwiftPackageReference "ACarousel" */;
 			productName = ACarousel;
 		};
 /* End XCSwiftPackageProductDependency section */
