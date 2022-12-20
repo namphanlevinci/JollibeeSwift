@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreData
+import ACarousel
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
@@ -32,15 +33,11 @@ struct ContentView: View {
                 Image("jollibee-background-new-home")
                     .resizable()
                     .scaledToFit()
+                
                 VStack(alignment: .leading){
                     HeaderVIew()
                     VStack{
-                        Image("jollibee-shop").resizable()
-                            .frame(
-                                width: ContentView.screenWidth - 70,
-                                height: ContentView.screenWidth - 70
-                            )
-                        
+                        CarouselView()
                     }
                     .frame(width: ContentView.screenWidth, height: ContentView.screenHeight / 2 - 80)
                     VStack{
@@ -145,5 +142,27 @@ struct HeaderVIew: View{
             }
         }
         .padding(EdgeInsets(top: 60, leading: 15, bottom: 30, trailing: 15))
+    }
+}
+
+struct ItemCarousel: Identifiable {
+    let id = UUID()
+    let image: Image
+}
+
+let roles = ["jollibee-shop","jollibee-shop","jollibee-shop","jollibee-shop","jollibee-shop","jollibee-shop"]
+struct CarouselView: View {
+
+    let items: [ItemCarousel] = roles.map { ItemCarousel(image: Image($0)) }
+
+    var body: some View {
+        ACarousel(items) { item in
+            item.image
+                .resizable()
+                .scaledToFill()
+                .frame(height: 300)
+                .cornerRadius(30)
+        }
+        .frame(height: 300)
     }
 }

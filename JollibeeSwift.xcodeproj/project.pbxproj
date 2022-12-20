@@ -21,6 +21,7 @@
 		1264B854294F59D800B59601 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1264B847294F59D800B59601 /* Roboto-Black.ttf */; };
 		1264B855294F59D800B59601 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1264B848294F59D800B59601 /* Roboto-ThinItalic.ttf */; };
 		1264B856294F59D800B59601 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1264B849294F59D800B59601 /* Roboto-LightItalic.ttf */; };
+		1274B5712951624600B50C45 /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 1274B5702951624600B50C45 /* ACarousel */; };
 		127D001A294FCC61002D4888 /* SVN-Merge Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 127D0019294FCC61002D4888 /* SVN-Merge Bold.otf */; };
 		12AAF167294E83AE002493FC /* JollibeeSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAF166294E83AE002493FC /* JollibeeSwiftApp.swift */; };
 		12AAF169294E83AE002493FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AAF168294E83AE002493FC /* ContentView.swift */; };
@@ -88,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1274B5712951624600B50C45 /* ACarousel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +209,9 @@
 			dependencies = (
 			);
 			name = JollibeeSwift;
+			packageProductDependencies = (
+				1274B5702951624600B50C45 /* ACarousel */,
+			);
 			productName = JollibeeSwift;
 			productReference = 12AAF163294E83AE002493FC /* JollibeeSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -279,6 +284,9 @@
 				Base,
 			);
 			mainGroup = 12AAF15A294E83AD002493FC;
+			packageReferences = (
+				1274B56F2951624600B50C45 /* XCRemoteSwiftPackageReference "ACarousel" */,
+			);
 			productRefGroup = 12AAF164294E83AE002493FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -667,6 +675,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1274B56F2951624600B50C45 /* XCRemoteSwiftPackageReference "ACarousel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JWAutumn/ACarousel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1274B5702951624600B50C45 /* ACarousel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1274B56F2951624600B50C45 /* XCRemoteSwiftPackageReference "ACarousel" */;
+			productName = ACarousel;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		12AAF171294E83AE002493FC /* JollibeeSwift.xcdatamodeld */ = {
