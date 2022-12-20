@@ -160,9 +160,7 @@ struct CarouselView: View {
             item.image
                 .resizable()
                 .scaledToFill()
-                .frame(height: 300)
-                .cornerRadius(30)
         }
-        .frame(height: 300)
+        .frame(height: 350)
     }
 }
